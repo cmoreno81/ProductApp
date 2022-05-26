@@ -35,7 +35,7 @@ public class ExpiringProduct {
     @Resource (lookup="jms/productQueue")
     private Queue productQueue;
 
-    @Schedule(dayOfWeek = "Mon-Fri", month = "*", hour = "16", dayOfMonth = "*", year = "*", minute = "20", second = "0")
+    @Schedule(dayOfWeek = "Mon-Fri", month = "*", hour = "10", dayOfMonth = "*", year = "*", minute = "57", second = "0")
     
     public void handleExpiringProducts() {
         
